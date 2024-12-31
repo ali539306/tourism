@@ -11,13 +11,14 @@ interface Props {
 
 const HotelCard = ({ name, city, image, price, reviewNum }: Props) => {
   return (
-    <>
+    
       <div className="cursor-pointer bg-white rounded-md overflow-hidden">
-        <div className="relative overflow-hidden ">
+        <div className="relative overflow-hidden w-[100%] h-[20rem]">
           <img
             src={image}
             alt={name}
-            className="transform object-cover transition-all duration-700 scale-100 hover:scale-125"
+            // height={900}
+            className="transform object-cover transition-all duration-700 scale-100 hover:scale-125 layout=fill h-[350px]"
           />
         </div>
         <div className="p-[1.4rem]">
@@ -53,7 +54,7 @@ const HotelCard = ({ name, city, image, price, reviewNum }: Props) => {
           </h1>
         </div>
       </div>
-    </>
+    
   );
 };
 

@@ -7,12 +7,12 @@ interface Props {
 }
 function Navbar({ openNav }: Props) {
   return (
-    <div>
-      <div className="w-[100%] h-[12vh]  flex  justify-between mt-8">
-        <div className="w-[70px] h-[70px] lg:w-[120px] lg:h-[70px] mx-auto flex object-contain ">
-          <img src="logo.png" alt="" className="cursor-pointer items-center" />
+    <div className="w-[100%] bg-white">
+      <div className="flex w-[80%] mx-auto items-center justify-between h-[12vh]">
+        <div className="relative w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] object-contain cursor-pointer">
+          <img src="logo.png" alt="logo"  />
         </div>
-        <div className="flex  mx-auto space-x-12 items-center my-auto">
+        <div className="flex   space-x-12 items-center ">
           <a href="#" className="nav-link">
             Home
           </a>
