@@ -8,7 +8,7 @@ import Hotels from './helper/Navbar/Hotels';
 import Reviews from './helper/Navbar/Reviews';
 import Contact from './Contact';
 import Footer from './helper/Navbar/Footer';
-function page() {
+function Page() {
   const [nav , setNav]=useState(false)
   const openNavHndler=()=>setNav(true)
   const closeNavHndler=()=>setNav(false)
@@ -26,4 +26,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
