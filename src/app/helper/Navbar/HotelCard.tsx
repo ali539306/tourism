@@ -1,5 +1,6 @@
 "use client";
 import { StarIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 import React from "react";
 interface Props {
   image: string;
@@ -14,11 +15,11 @@ const HotelCard = ({ name, city, image, price, reviewNum }: Props) => {
     
       <div className="cursor-pointer bg-white rounded-md overflow-hidden">
         <div className="relative overflow-hidden w-[100%] h-[20rem]">
-          <img
+          <Image
             src={image}
             alt={name}
-            // height={900}
-            className="transform object-cover transition-all duration-700 scale-100 hover:scale-125 layout=fill h-[350px]"
+            
+            className="transform object-cover transition-all duration-700 scale-100 hover:scale-125  "layout="fill"
           />
         </div>
         <div className="p-[1.4rem]">
@@ -49,8 +50,10 @@ const HotelCard = ({ name, city, image, price, reviewNum }: Props) => {
           </div>
           <h1 className="text-[15px] mt-[1rem] flex items-center space-x-3">
             <span className="text-[15px] text-black opacity-70">Form :</span>
-            <span className="text-[16px] text-orange-600 font-bold">{price}</span>
-            <span className="text-[15px] text-black opacity-70">night</span>
+            <span className="text-[16px] text-orange-600 font-bold">{price}
+            <span className="text-[15px] text-black opacity-70 font-semibold">/night</span>
+            </span>
+           
           </h1>
         </div>
       </div>

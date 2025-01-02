@@ -24,10 +24,10 @@ const responsive = {
 const ReviewSlider = () => {
   return (
     <Carousel additionalTransfrom={0} autoPlay={true} arrows={true}  autoPlaySpeed={5000} centerMode={false} infinite responsive={responsive} itemClass='item'>
-        <ClientReview image="user1.jpg" name="Naruta"/>
-        <ClientReview image="user2.jpg" name="Jon"/>
-        <ClientReview image="user3.jpg" name="James"/>
-        <ClientReview image="user4.jpg" name="Alex"/>
+        <ClientReview image="/images/user1.jpg" name="Naruta"/>
+        <ClientReview image="/images/user2.jpg" name="Jon"/>
+        <ClientReview image="/images/user3.jpg" name="James"/>
+        <ClientReview image="/images/user4.jpg" name="Alex"/>
         
     </Carousel>
   );
