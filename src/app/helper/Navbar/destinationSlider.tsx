@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -34,8 +35,8 @@ const DestinationSlider = () => {
       itemClass="item"
     >
       <div>
-        <img
-          src="d1.png"
+        <Image
+          src="/images/d1.png"
           alt="destination"
           width={200}
           height={200}
@@ -45,8 +46,8 @@ const DestinationSlider = () => {
         <p className="destination__p"> 7 Hotels</p>
       </div>
       <div>
-        <img
-          src="d2.png"
+        <Image
+          src="/images/d2.png"
           alt="destination"
           width={200}
           height={200}
@@ -56,8 +57,8 @@ const DestinationSlider = () => {
         <p className="destination__p"> 6 Hotels</p>
       </div>
       <div>
-        <img
-          src="d3.png"
+        <Image
+          src="/images/d3.png"
           alt="destination"
           width={200}
           height={200}
@@ -67,8 +68,8 @@ const DestinationSlider = () => {
         <p className="destination__p"> 5 Hotels</p>
       </div>
       <div>
-        <img
-          src="d4.png"
+        <Image
+          src="/images/d4.png"
           alt="destination"
           width={200}
           height={200}
@@ -78,8 +79,8 @@ const DestinationSlider = () => {
         <p className="destination__p"> 4 Hotels</p>
       </div>
       <div>
-        <img
-          src="d5.png"
+        <Image
+          src="/images/d5.png"
           alt="destination"
           width={200}
           height={200}
@@ -89,8 +90,8 @@ const DestinationSlider = () => {
         <p className="destination__p"> 2 Hotels</p>
       </div>
       <div>
-        <img
-          src="d6.png"
+        <Image
+          src="/images/d6.png"
           alt="destination"
           width={200}
           height={200}
@@ -99,6 +100,7 @@ const DestinationSlider = () => {
         <h1 className="destination__h1">Brooklyn</h1>
         <p className="destination__p"> 3Hotels</p>
       </div>
+      
     </Carousel>
   );
 };

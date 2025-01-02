@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ const Footer = () => {
           <div>
             <a className="footer_link" href="#">Help Center</a>
             <a className="footer_link" href="#">Safety Information</a>
-            <a className="footer_link" href="#">Cancellation option</a>
+            <a className="footer_link" href="#">Cancellation options</a>
             <a className="footer_link" href="#">Medical Doctor</a>
           </div>
         </div>
@@ -56,6 +57,9 @@ const Footer = () => {
                   </div>
                 </div>
       </div>
+      <div className="mt-[1rem] grid grid-cols-1 gap-[1.4rem] sm:grid-cols-2 justify-between w-[80%] mx-auto "> <p className="text-[17px] text-black opacity-60 font-semibold">&#169; Copyright webdevWarriors 2023</p>
+     <Image src="/images/pay.svg" alt="pay" width={230} height={230} className="object-contain sm:ml-auto"/></div>
+     
     </div>
   );
 };

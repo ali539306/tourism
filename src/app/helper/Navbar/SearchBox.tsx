@@ -10,7 +10,7 @@ const SearchBox = () => {
         <MapIcon className='h-[1.5rem] w-[1.5rem] text-red-600'/>
         <div>
             <p className='text-[18px] font-semibold mb-[0.2rem]'>Location</p>
-            <input className="outline-none border-none" type="date" placeholder="where are you going" />
+            <input className="outline-none border-none" type="text" placeholder="Where are you going?" />
         </div>
       </div>
 
